@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('Poppins-Light.ttf');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    width: auto;
+    display: grid;
+    place-content: center;
+    background-image: linear-gradient(180deg , rgb(100, 236, 230),rgb(68, 170, 162));
+    font-family: Poppins;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    width: 600px;
+    overflow: hidden;
+}
+.container_1{
+    height: 350px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 125px 125px;
+    grid-template-rows: 125px 225px ;
+    color: rgb(240, 248, 255);
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 5.5px );
+   -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+   
+    margin: 2%;
+}
+#grid1{
+    grid-column: 1/4;
+}
+.container_2{
+    height: 350px;
+    width: 250px;
+    color: rgb(240, 248, 255);
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 5.5px );
+   -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    margin: 2%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.container_2 h2{
+    margin: 3%;
+}
+.info li{
+    text-decoration: none !important;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+li::marker{
+    color: rgb(255, 255, 255,0.0);
+}
+.info i{  
+    margin: 3%;
+    font-size: 1.4rem;
+    text-decoration: none !important;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon img{
+    height: 125px;
+    width: 125px;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.sr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+@media only screen and (max-width: 700px) {
+    
+    main{
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .container_1{
+        margin: 0;
+        height: 45vh;
+        width: auto;
+    }
+    .container_2{
+       
+       height: 35vh;
+    }
+    .container_2 h2{
+        margin: 3%;
+    }
+}
